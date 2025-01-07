@@ -1,0 +1,19 @@
+includes:
+    - ./vendor/nunomaduro/larastan/extension.neon
+
+parameters:
+    # The level ranges from 0 to 9 (higher is stricter)
+    level: 3
+
+    paths:
+        - app
+        - database
+
+    # Optional: Exclude certain directories or files
+    excludePaths:
+        - ./*/*/*/tests
+
+    # Laravel-specific settings
+    scanDirectories:
+        - app
+        - database
